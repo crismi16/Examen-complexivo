@@ -10,5 +10,6 @@ export const routes: Routes = [
     { path: 'peliculas', component: PeliculasComponent },
     { path: 'tickets', component: TicketsComponent },
     { path: 'about-you', component: AboutYouComponent },
-    { path: 'not-found', component: NotFoundComponent },
+    { path: '**', component: NotFoundComponent },
+    { path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
